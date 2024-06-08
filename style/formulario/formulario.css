@@ -1,0 +1,28 @@
+form.principal__formulario {
+    /* display: flex;
+    flex-direction: column;
+    gap: 40px;
+     */
+    padding: 0 40px;
+    
+}
+
+form.principal__formulario .principal__formulario__campos{
+    display: flex;
+    flex-direction: column;
+}
+
+form.principal__formulario .principal__formulario__campos input{
+
+    border:solid 3px var(--color-blue-border-button) ;
+    border-radius: 30px;
+    height: 58px;
+    margin-bottom: 40px;
+}
+
+::placeholder{
+    font-family: var(--font-secondary);
+    color: var(--color-blue-border-button);
+    font-weight: 700;
+    padding-left: 20px;
+}

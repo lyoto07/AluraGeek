@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 -10px 9.5px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--color-purple-banner);
+    padding: 20px 28px;
+}
+
+.footer h2 {
+    color: var(--color-light-gray);
+    font-size: 1.5rem;
+}
+
+.footer p, span{
+    color: var(--color-light-gray);
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+}
+
+.footer p {
+    font-weight: 400;
+}
+
+.footer span{
+    font-weight: 200;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}

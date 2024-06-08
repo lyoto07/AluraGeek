@@ -1,0 +1,22 @@
+main.corpo .sessao_adicionar_produto{
+    padding: 40px 0px;
+    margin: 33px 0 58px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* main.corpo{
+    display: flex;
+    flex-direction: row-reverse;
+
+} */
+
+@media (min-width:768px){
+    main.corpo{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 110px;
+    }
+}
+

@@ -1,0 +1,13 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96px;
+    box-shadow: 0 7px 1px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--color-purple-banner);
+}
+
+.cabecalho h1 {
+    color: var(--color-light-gray);
+    font-size: 1.5rem;
+}

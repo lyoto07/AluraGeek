@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cards with Horizontal Scroll</title>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style-type: none;
+  }
+  .row {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  .card {
+    min-width: 200px;
+    height: 150px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex: 0 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<ul class="container" id="cardContainer">
+  <!-- Rows will be inserted here by JavaScript -->
+</ul>
+
+<script>
+  const cards = [
+    'Card 1', 'Card 2', 'Card 3', 'Card 4', 'Card 5', 'Card 6',
+    'Card 7', 'Card 8', 'Card 9', 'Card 10', 'Card 11', 'Card 12'
+  ];
+
+  const cardsPerRow = 3; // Adjust this number as needed
+  const container = document.getElementById('cardContainer');
+
+  for (let i = 0; i < cards.length; i += cardsPerRow) {
+    const row = document.createElement('li');
+    row.classList.add('row');
+
+    for (let j = i; j < i + cardsPerRow && j < cards.length; j++) {
+      const card = document.createElement('div');
+      card.classList.add('card');
+      card.textContent = cards[j];
+      row.appendChild(card);
+    }
+
+    container.appendChild(row);
+  }
+</script>
+
+</body>
+</html>

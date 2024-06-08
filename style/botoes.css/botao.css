@@ -1,0 +1,19 @@
+form.principal__formulario input.botao { 
+    border: solid 3px var(--color-blue-border-button);
+    border-radius: 15px;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 1.25rem;
+    height: 55px;
+    width: calc(94.5%/2);
+}
+
+form.principal__formulario input.botao-envio{
+    background-color: var(--color-blue-border-button);
+    color: var(--color-light-gray);
+}
+
+form.principal__formulario input.botao-reset{
+    color: var(--color-blue-border-button);
+    background-color: transparent;
+}

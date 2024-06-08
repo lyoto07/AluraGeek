@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge AluraGeek</title>
+    
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/logo__alurageek.svg" alt="Três Corações vermelhos em forma de bytes">
+        <h1>AluraGeek</h1>
+    </header>
+    <main class="corpo">
+        <section class="sessao_adicionar_produto">
+            <h2 class="titulo">ADICIONAR PRODUTO:</h2>
+
+            <form action="" method="post" class="principal__formulario" data-formulario>
+                <fieldset class="principal__formulario__campos">
+                    <input type="text" name="nome" placeholder="Nome" id="nome" class="campo__nome" minlength="3" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" required data-nome/>
+                    <span class="mensagem-erro"></span>
+    
+                    <input type="text" name="preco" placeholder="Preço" id="preco" class="campo__preco"minlength="1" pattern="^\d+(\.\d{1,2})?$" required data-preco>
+                    <span class="mensagem-erro"></span>
+    
+                    <input type="text" name="imagem" placeholder="Imagem" id="imagem" class="campo__imagem" required data-imagem>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+    
+                <input type="submit" value="Enviar" class="botao botao-envio">
+                <input type="reset" value="Limpar" class="botao botao-reset">
+            </form>
+        </section>
+       
+
+        <section class="sessao__produtos">
+            <h2 class="titulo">MEUS PRODUTOS:</h2>
+
+             <ul class="produtos" data-lista></ul>
+                <!-- <li class="card__produto">
+                    <img src="img/stormtrooper.png" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Stormtrooper</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 200,00 </p>
+                            <img src="img/lixeira.svg" alt="" data-delete>
+                        </div>
+                    </div>
+                </li> -->
+                
+                <!--<li class="card__produto">
+                    <img src="img/GameBoy.svg" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Game Boy Classic</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 60,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card__produto">
+                    <img src="img/stormtrooper.png" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Stormtrooper</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 200,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card__produto">
+                    <img src="img/GameBoy.svg" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Game Boy Classic</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 60,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="produtos">
+                <li class="card__produto">
+                    <img src="img/stormtrooper.png" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Stormtrooper</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 200,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card__produto">
+                    <img src="img/GameBoy.svg" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Game Boy Classic</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 60,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card__produto">
+                    <img src="img/stormtrooper.png" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Stormtrooper</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 200,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card__produto">
+                    <img src="img/GameBoy.svg" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Game Boy Classic</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 60,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="produtos">
+                <li class="card__produto">
+                    <img src="img/stormtrooper.png" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Stormtrooper</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 200,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card__produto">
+                    <img src="img/GameBoy.svg" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Game Boy Classic</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 60,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="card__produto">
+                    <img src="img/stormtrooper.png" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Stormtrooper</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 200,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card__produto">
+                    <img src="img/GameBoy.svg" alt="StormTrooper">
+                    <div class="card__container_info">
+                        <h2 class="card__produto__titulo">Game Boy Classic</h2>
+                        <div class="card__produto__conteudo">
+                            <p class="card-produto-price">R$ 60,00</p>
+                            <img src="img/lixeira.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul> -->
+        </section>
+    </main>
+    <footer class="footer">
+
+        <div class="logo">
+            <img src="img/logo__alurageek.svg" alt="Três Corações vermelhos em forma de bytes">
+            <h2>AluraGeek</h1>
+        </div>
+        <p>DESENVOLVIDO POR: <br> Guilherme Serafim</p>
+        <span>ALURA LATAM - 2024</span>
+    </footer>
+    <script type="module" src="js/mostrarProdutos.js"></script>
+    <script type="module" src="js/criarProduto.js"></script>
+    <script type="module" src="js/deletarProduto.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(corpo.css);
+@import url(formulario/formulario.css);
+@import url(botoes.css/botao.css);
+@import url(cards/style.css);
+
+:root {
+    --font-primary:'Press Start 2P', cursive;
+    --font-secondary: 'IBM Plex Mono', monospace   ;
+    --color-black: #000000;
+    --color-purple-banner: #5300C8;
+    --color-purple-card: #5D04D9;
+    --color-blue-border-button: #03318C;
+    --color-magenta1: #8C0375;
+    --color-magenta2: #C004D9;
+    --color-magenta3: #9303A6;
+    --color-light-gray: #E5E5E5;
+    --color-white:#ffffff;
+}
+
+body{
+    background-color: #fff;
+    font-family: var(--font-primary);
+    color: var(--color-black);
+    font-size: 1rem;
+}
+
+.titulo{
+    font-size: 1.5rem;
+    text-align: center;
+}
+  
