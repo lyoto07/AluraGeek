@@ -17,6 +17,7 @@ main.corpo .sessao_adicionar_produto{
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: 110px;
+        justify-content: space-evenly;
     }
 }
 
