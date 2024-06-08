@@ -1,3 +1,10 @@
 {
-  "Produtos": []
+  "Produtos": [
+    {
+      "nome": "stormtrooper",
+      "preco": "10",
+      "imagem": "stormtrooper",
+      "id": 1
+    }
+  ]
 }
